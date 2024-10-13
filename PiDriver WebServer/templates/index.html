@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PiDriver</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="styles.css">
+  </head>
+  <body style="background-color: rgb(100, 56, 81)">
+    <header>PiCar Camera Streaming</header>
+    <div id="video-player">
+      <img
+        style="background-color: rgb(34, 29, 29)"
+        src="{{ url_for('video_feed') }}"
+        width="1280"
+        height="720"
+      />
+    </div>
+
+    <div id="gamepadPrompt"></div>
+
+    <div id="gamepadDisplay"></div>
+    <script src = "main.js"></script>
+  </body>
+</html>
